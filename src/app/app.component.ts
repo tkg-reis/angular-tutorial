@@ -13,11 +13,14 @@ import {RouterModule} from '@angular/router';
   ],
   template : `
     <main>
-      <a [routerLink]="['/']">
-        <header class="brand-name">
+      <header class="brand-name">
+        <a [routerLink]="['/']">
           <p>home</p>
-        </header>
-      </a>
+        </a>
+        <a [routerLink]="['/cal']">
+          <p>cal</p>
+        </a>
+      </header>
       <section class="content">
         <router-outlet></router-outlet>
       </section>
